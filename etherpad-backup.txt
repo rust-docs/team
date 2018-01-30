@@ -1,0 +1,712 @@
+This file represents the state of https://public.etherpad-mozilla.org/p/rust-docs at the time
+we decided to move away from etherpad: https://github.com/rust-docs/team/issues/1#issuecomment-361718890
+
+---------------------------------------------
+
+Rust docs meeting notes
+
+Interesting links:
+    https://developer.apple.com/library/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/
+    https://swift.org/documentation/api-design-guidelines/
+
+Open RFCS: https://github.com/rust-lang/rfcs/pulls?q=is%3Aopen+is%3Apr+label%3AT-doc
+Nominated issues: https://github.com/rust-lang/rust/issues?q=is%3Aopen+is%3Aissue+label%3AT-doc+label%3AI-nominated
+Nominated PRs: https://github.com/rust-lang/rust/pulls?q=is%3Aopen+is%3Apr+label%3AT-doc+label%3AI-nominated
+Un-prioritized T-doc issues: https://github.com/rust-lang/rust/issues?q=is%3Aopen+is%3Aissue+label%3AT-doc+-label%3AP-low+-label%3AP-medium+-label%3AP-high+sort%3Acreated-asc
+P-medium T-doc issues: https://github.com/rust-lang/rust/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3AT-doc%20label%3AP-medium%20sort%3Acreated-asc
+
+
+Future goals:
+    * Knocking out https://github.com/rust-lang/rust/issues/29329
+    * Finishing book v2
+    * Docs Days 2 planning
+    * Rustdoc Hoedown/Pulldown migration https://public.etherpad-mozilla.org/p/rustdoc-hoedown
+
+When adding items to the agenda, please also include the IRC nickname of the user who requested it, if available! This helps us know who to ping in the meeting!
+
+# Agenda Next
+
+- moving to github for organization ( https://github.com/rust-docs/team/issues/1 )
+
+# Agenda 2018-01-23
+
+Log at https://botbot.me/mozilla/rust-docs/msg/96079909/
+
+- steveklabnik: congrats
+- all@rust-lang email?
+- doxidize update
+- <Havvy> [Reference 209]  Start documenting rustc and rustdoc ( https://github.com/rust-lang-nursery/reference/pull/209 )
+
+# Agenda 2018-01-16
+
+Log at https://botbot.me/mozilla/rust-docs/msg/95825860/
+
+- https://github.com/rust-lang/rust-by-example/issues/550#issuecomment-356732654
+
+# Agenda 2018-01-09
+
+Log at https://botbot.me/mozilla/rust-docs/msg/95561820/
+
+- Continued discussion of 2018 goals
+  - Continued work on rustdoc and its sequel
+  - Focused work on "intermediate-level documentation"
+  - Outreach to major libraries to fill out their documentation
+
+# Agenda 2018-01-02
+
+Log at https://botbot.me/mozilla/rust-docs/msg/95281571/
+
+- Retrospective on 2017
+- Roadmap/goals for 2018 (feel free to list ideas here!)
+  - misdreavus: An effort like the Libz Blitz, fielding suggestions from the community for high-profile crates to update docs
+- Highlight when APIs panic in rustdoc https://github.com/rust-lang/rust/issues/46963#issuecomment-353790763
+- <Havvy> Figure out who to prod on infra team for RBE in Rust distribution?
+
+# Agenda 2017-12-19
+
+Log at https://botbot.me/mozilla/rust-docs/msg/94850571/
+
+- misdreavus: meetings during end-of-year holiday break?
+  - next meeting 2018-01-02
+- imperio: sum up of latest big changes in rustdoc
+
+# Agenda 2017-12-05
+
+Log at https://botbot.me/mozilla/rust-docs/msg/94281119/
+
+- Havvy: revisit "enums without fields" and lang team decision https://github.com/rust-lang/rust/issues/46348
+  - Rename decision was finalized.
+- https://github.com/rust-lang/rust/pull/45898
+
+# Agenda 2017-11-28
+
+Log at https://botbot.me/mozilla/rust-docs/msg/94020392/
+
+- New Rustdoc checkin (if steveklabnik has had a chance to get back into the project after vacation/travel)
+- P-high triage?
+
+# Agenda 2017-11-21
+
+Log at https://botbot.me/mozilla/rust-docs/msg/93780617/
+
+- revisit https://internals.rust-lang.org/t/proposal-bikeshed-rename-c-like-enumeration/6209
+  - we'll pick "enums without fields", but we also want to bring in the lang-team
+  - Havvy to create PRs to reference/nomicon/etc to switch, we can ping lang-team there
+- Havvy: Quick status updates on long term projects?
+  - New Rustdoc
+    - steveklabnik has been out of the loop due to travel/vacation, pushing this to next week
+  - Rust by Example
+   - needs a chaperone to push for inclusion on the bookshelf
+  - Markdown parser switch
+    - waiting for on-by-default warnings to hit stable (1.23) and will gauge timing from there based on community reactions
+  - The Rust Book 2ed
+    - several early chapters being fully finalized for print, others progressing apace
+
+# Agenda 2017-11-14
+
+Log at https://botbot.me/mozilla/rust-docs/msg/93519659/
+
+- https://internals.rust-lang.org/t/proposal-bikeshed-rename-c-like-enumeration/6209 (Proposal + Bikeshed: Rename C-like Enumeration)
+  - discussion summarized in-thread
+
+# Agenda 2017-11-07
+
+Log at https://botbot.me/mozilla/rust-docs/msg/93245085/
+
+Issues from triage that were nominated:
+- https://github.com/rust-lang/rust/issues/43193 (Warn when doc comment doesn't provide code example?)
+- https://github.com/rust-lang/rust/issues/44894 (Documentation for new stable features can be hard to find)
+
+- Havvy: Linking to RFCs w/new book. Stabilize location of RFCs in book?
+- misdreavus: https://github.com/rust-lang/rust/pull/45039#issuecomment-342528108
+  - looking for thoughts from imperio and frewsxcv, who have looked at this previously
+
+# Agenda 2017-10-31
+
+Log at https://botbot.me/mozilla/rust-docs/msg/92962188/
+
+Issue triage!
+https://github.com/rust-lang/rust/issues?q=is%3Aopen+is%3Aissue+label%3AT-doc+-label%3AP-low+-label%3AP-medium+-label%3AP-high+sort%3Acreated-asc
+
+# Agenda 2017-10-24
+
+Log at https://botbot.me/mozilla/rust-docs/msg/92692232/
+
+- imperio/misdreavus: https://github.com/rust-lang/rust/pull/45212
+- misdreavus: how to adjust meeting time for daylight savings ending over the next few weeks?
+
+# Agenda 2017-10-17
+
+New meeting time! Meetings moved to Tuesdays 19:00 UTC due to scheduling conflicts
+
+Log at https://botbot.me/mozilla/rust-docs/msg/92416427/
+
+- imperio: https://github.com/rust-lang/rust/pull/45187
+- frewsxcv: https://github.com/rust-lang/rust/pull/45227
+- misdreavus: https://github.com/rust-lang/rust/pull/45039
+
+# Agenda 2017-10-11
+
+Log at https://botbot.me/mozilla/rust-docs/msg/92187534/
+
+ - steveklabnik: https://github.com/rust-lang/rust/issues/44964
+ - Havvy: https://github.com/rust-lang-nursery/reference/issues/119
+   - was official policy written about moving unstable things exclusively to the unstable book?
+- misdreavus: https://github.com/rust-lang/rust/pull/44969
+
+# Agenda 2017-09-27
+
+Log at https://botbot.me/mozilla/rust-docs/msg/91638646/
+
+- Havvy for "doc team shepherd" to help out on the reference?
+  - yes!
+- Issue tags for the reference (Easy, Missing Feature, Tracking)
+  - yes! any further tag request can go through steveklabnik
+
+# Agenda 2017-09-20
+
+Log at https://botbot.me/mozilla/rust-docs/msg/91358087/
+
+- misdreavus: do we want to spin up an impl period working group to finish the docs checklist?
+  - misdreavus will tally up the last work needed on the checklist and ask aturon about getting the new group spun up
+
+# Agenda 2017-09-13
+
+Log at https://botbot.me/mozilla/rust-docs/msg/91066163/
+
+These issues are p-low, but could be e-easy if we nail down what needs to be added
+* https://github.com/rust-lang/rust/issues/32874
+  * frewsxcv self-assigned
+* https://github.com/rust-lang/rust/issues/36284
+  * summary comment left
+* https://github.com/rust-lang/rust/issues/36450
+  * summary comment left, and also linked to the "ptr module docs checklist" issue, since it's still open
+
+# Agenda 2017-09-06
+
+Log at https://botbot.me/mozilla/rust-docs/msg/90765783/
+
+All these issue links were added by steveklabnik during triage on 2017-08-30:
+* https://github.com/rust-lang/rust/issues/29982
+* https://github.com/rust-lang/rust/issues/41671
+
+- imperio: should we provide an extra style for code blocks tagged with compile_fail and/or ignore?
+- misdreavus: RFC checkin? https://github.com/rust-lang/rfcs/pull/1687#issuecomment-327367772
+
+# Agenda 2017-08-30
+
+Log at https://botbot.me/mozilla/rust-docs/msg/90482406/
+
+- imperio: https://github.com/rust-lang/rust/pull/44165
+  - deferred to check out asynchronously
+- Issue triage: give issues priority tags
+  - https://github.com/rust-lang/rust/issues?q=is%3Aopen+is%3Aissue+label%3AT-doc+-label%3AP-low+-label%3AP-medium+-label%3AP-high+sort%3Acreated-asc
+- Release Cycle Issue Triage: What issues to mark P-high for this cycle?
+  - https://github.com/rust-lang/rust/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3AT-doc%20label%3AP-medium%20sort%3Acreated-asc
+  - some issues claimed during triage, but others are welcome to be done asynchronously (we used up all the time for triage >_>)
+
+# Agenda 2017-08-23
+
+Log at https://botbot.me/mozilla/rust-docs/msg/90203771/
+
+- imperio: https://github.com/rust-lang/rust/pull/43949
+  - thoughts on this PR?
+  - okay in its current form, add a note to docs about "this doesn't compile" not necessarily being stable and clean up the reformatting done to unrelated docs
+- imperio: https://github.com/rust-lang/rust/pull/43966
+  - thoughts on implementation?
+  - misdreavus: it's fine, just comment the lines with its thought process
+- misdreavus: https://github.com/rust-lang/rust/pull/43849
+  - thoughts on this PR?
+  - mixed-to-positive response, wanted some time to consider it
+- steveklabnik: status of P-high issues?
+  - just making sure the claimed issues were still being worked on
+  - frewsxcv claimed https://github.com/rust-lang/rust/issues/22569 from steveklabnik
+  - misdreavus has partially worked on https://github.com/rust-lang/rust/issues/40116
+    - https://github.com/QuietMisdreavus/rustdoc-tutorial
+
+# Agenda 2017-08-16
+
+Log at https://botbot.me/mozilla/rust-docs/msg/89925308/
+
+- lukaramu: Should links to the old book be replaced eagerly? Especially with regard to when the book is officially released and the release train delay
+  - not so eagerly, once a chapter is frozen it's fine but before then it's a bit fraught
+- frewsxcv: general feel of adding https://www.reddit.com/r/rust/comments/6tma1a/a_great_so_answer_about_stdcell/ to the std::cell docs?
+  - sure
+
+# Agenda 2017-07-26
+
+Log at https://botbot.me/mozilla/rust-docs/msg/89084782/
+
+- imperio: New rustdoc front-end framework: I talked a bit with brson about this and I think, at least if we can't make Steve (and others?) change his/their mind(s), I'd like to have the reasons for this choice. I have to admit that for now, it's quite dark for me. :)
+
+# Agenda 2017-07-19
+
+Log at https://botbot.me/mozilla/rust-docs/msg/88788066/
+
+- Havvy: Rust Reference?
+
+# Agenda 2017-07-12
+
+Log at https://botbot.me/mozilla/rust-docs/msg/88488672/
+
+- steveklabnik: https://github.com/steveklabnik/rustdoc/milestone/1
+- steveklabnik: no time to work on P-high issues this cycle :(
+  - misdreavus: me too >_>
+- imperio: would we want to add a lint or other kind of optional check for doc comments without code blocks?
+  - https://github.com/rust-lang/rust/issues/43193
+
+# Agenda 2017-06-14
+
+Log at https://botbot.me/mozilla/rust-docs/msg/87258919/
+
+# Agenda 2017-06-07
+
+Log at https://botbot.me/mozilla/rust-docs/msg/86945996/
+
+Release Cycle Issue Triage: What issues to mark P-high for this cycle?
+Current P-medium issues https://github.com/rust-lang/rust/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3AT-doc%20label%3AP-medium%20sort%3Acreated-asc
+
+# Agenda 2017-05-31
+
+Log at https://botbot.me/mozilla/rust-docs/msg/86626821/
+
+- https://github.com/rust-lang/rfcs/pull/1687
+  - Rendered: https://github.com/jonathandturner/rfcs/blob/front_page_styleguide/text/0000-api-doc-frontpage-styleguide.md
+  - Overall in favor, but with open questions about READMEs versus the crate's front page, discussion resolved to make comments in-thread
+- https://github.com/rust-lang/rfcs/pull/1990
+  - Rendered: https://github.com/mgattozzi/rfcs/blob/external-doc-attribute/text/0000-external-doc-attribute.md
+  - Overall in favor, but with some questions about implementation
+  - resolved to make a summary comment in-thread
+- Maybe also relevant, as it was not discussed in the dev tool meeting but was updated recently: https://github.com/rust-lang/rfcs/pull/1946#issuecomment-304504721
+  - discussion postponed to the next dev-tools meeting
+
+# Agenda 2017-05-24
+
+Log at https://botbot.me/mozilla/rust-docs/msg/86090210/
+
+- projektir: Documentation of modules in --bin projects without using a lib.rs seems lacking
+  - core argument: there are a number of confusing things about the mod statement, w.r.t. current documentation surrounding it:
+    - for people used to files being independent compilation units, the use of `mod thing;` to pull in another file is non-obvious
+    - since the mod keyword can be used to declare an inline module (mod block) or pull in another file (mod statement) the relation between them is non-obvious
+    - most current documentation surrounding the use of mod to organize a project focuses on their use with a lib.rs crate-root, and it's non-obvious that the mod statement works the same with main.rs
+  - resolved to move the discussion to an issue in the book repo
+    - issue created: https://github.com/rust-lang/book/issues/721
+
+# Agenda 2017-05-17
+
+Log at https://botbot.me/mozilla/rust-docs/msg/85770015/
+
+- projektir: is it possible to rename the unstable book to something with less potential confusion with nightly docs or the new book?
+  - No consensus, so leaving with status quo
+- misdreavus: move FFI documentation into the nomicon?
+  - Consensus: yes https://github.com/rust-lang/rust/issues/42064
+  - Once this is done we can finish https://github.com/rust-lang/rust/issues/31227 too
+
+# Agenda 2017-05-10
+
+Log at https://botbot.me/mozilla/rust-docs/msg/85439980/
+
+- https://github.com/rust-lang/rust/pull/41700
+  - postponed until dev-tools team comes together and can provide guidance
+- hoedown -> pulldown (nrc + ...)
+  - full notes at https://public.etherpad-mozilla.org/p/rustdoc-hoedown
+
+# Agenda 2017-05-03
+
+Log at https://botbot.me/mozilla/rust-docs/msg/85105112/
+
+- https://github.com/rust-lang/rust/issues/40116
+  - Long term, we'd like to get some docs specifically about rustdoc and its output, like a tool manual for it
+  - Short term, adding more tips to the "How to read this documentation" section in std would help but is prone to dialog blindness
+- https://github.com/rust-lang/rust/issues/31227
+  - Long term, getting FFI docs into the nomicon, or even its own book, would be ideal
+  - Short term, the FFI section of the (first edition) book would be where that goes
+- frewsxcv: what benefits are there to having stable/beta editions of the unstable book? will this be confusing to users?
+  - like with unstable features in library docs, having the unstable book in stable docs lets people know about upcoming features and get involved
+- projektir: is it possible to rename the unstable book to something with less potential confusion with nightly docs or the new book?
+  - "Book of Rust Experiments" or "Unstable Reference" were proposed, nothing agreed upon
+
+# Agenda 2017-04-26
+
+Log at https://botbot.me/mozilla/rust-docs/msg/84770081/
+
+- frewsxcv: come to conclusion on https://github.com/rust-lang/rust/pull/40719
+  - Decision was to merge, pending a css style fix (missing semicolon)
+- steveklabnik (via misdreavus): plan for https://github.com/rust-lang/rust/issues/40116
+  - more information requested, follow-up next week
+
+# Agenda 2017-04-19
+
+- projektir: a concern about tweeting not-yet merged PRs. (imperio's opinion: I don't mind about speaking of new features but a bit uneasy about linking to not-yet merged PR)
+
+# Agenda 2017-04-12
+
+- https://github.com/rust-lang/rust/issues/41167#issuecomment-292920360
+  - PR was created and accepted prior to meeting
+  - https://github.com/rust-lang/rust/pull/41173
+- https://github.com/rust-lang/rust/issues/31137
+  - frewsxcv has not had time to address this issue
+  - re-assigned to misdreavus
+  
+
+# Agenda 2017-03-29
+
+- frewsxcv: https://github.com/rust-lang/rust/pull/40338#issuecomment-290057507
+- frewsxcv: next steps for https://github.com/rust-lang/rfcs/pull/1946 ?
+
+# Agenda 2017-03-22
+
+- https://github.com/rust-lang/rust/issues/39625#issuecomment-279450808
+- https://github.com/rust-lang/rust/issues/39187
+- https://github.com/rust-lang/rust/issues/40322
+
+# Agenda 2017-03-15
+
+- CI for the book and the reference
+- https://github.com/rust-lang/rfcs/pull/1946 (ping killercup if he forgets to join the meeting)
+- issue triage
+    
+# Agenda 2017-03-08
+
+Add mention of differences between nightly build and stable:
+      skade: "I see people constantly falling into the trap that "nightly is just stable with features" (like, LLVM assertions activated in nightly, adding to compile times), well, there's also misconceptions about the level of stability features have (like, some have:  "never") written next to them, etc., also that there are two kind of feature flags and codegen features usually hide behind -Z
+      github issue #40079
+    
+# Agenda 2017-02-22
+
+- mdbook: https://github.com/azerupi/mdBook/issues/204#issuecomment-280482421
+- bookshelf progress
+
+# Agenda 2017-02-08
+
+misdreavus: Should we look at the colors in rustdoc code blocks w.r.t. color-blindness?
+
+# Agenda 2017-01-25
+
+imperio: Should we make the generated docs alphabetically ordered? Functions/methods and traits implementation would be a lot easier to find.
+
+# Agenda 2017-01-18
+
+geal: https://github.com/rust-lang/cargo/issues/739 can we adapt https://github.com/geal/cargo-external-doc somewhere?
+
+# Agenda 2017-01-11
+
+-> imperio (call this damn little fool if he forgot the hour once again!): should we use my version of hoedown or not since the official one doesn't seem to have reviews
+  -> it has been decided to switch to my fork while we wait for the update from the official repository
+
+# Agenda 2016-12-14
+
+    PSA: () after function names
+
+    frewsxcv: Amend https://github.com/rust-lang/rfcs/blob/master/text/1574-more-api-documentation-conventions.md ? Amending RFCs might not be a thing...
+
+    steveklabnik: https://github.com/rust-lang/rust/pull/37928
+
+    steveklabnik: the future of doc.rust-lang.org/
+
+    frewsxcv: https://github.com/rust-lang/rfcs/pull/1708
+
+    Same as next item
+
+    steveklabnik: RFCs
+
+    https://github.com/rust-lang/rfcs/labels/T-docs
+
+    frewsxcv: https://github.com/rust-lang/rust/pull/38310
+
+    Nevermind this. This was a confusion in IRC: https://botbot.me/mozilla/rust-docs/2016-12-12/?msg=77860643&page=1
+
+
+# Agenda 2016-11-30
+
+    frewsxcv: https://github.com/rust-lang/rust/issues/36235
+
+
+# Agenda 2016-11-02
+
+    frewsxcv: https://github.com/rust-lang/rust/issues/37500
+
+    frewsxcv: https://github.com/rust-lang/rust/pull/37250
+
+
+# Agenda 2016-10-26
+
+    frewsxcv: https://github.com/rust-lang/rust/pull/37250
+
+
+# Agenda 2016-10-19
+
+    frewsxcv: https://github.com/rust-lang/rust/pull/37250
+
+
+# Agenda 2016-10-12
+
+    frewsxcv: https://github.com/rust-lang/rust/issues/37012
+
+
+# Agenda 2016-10-05
+
+    rust-www update: it's starting to get long... :-/ https://github.com/rust-lang/rust-www/pull/533
+
+    new reviewers in-training
+
+
+# Agenda 2016-09-28
+
+* We need to create a tool to generate the urls in docs -> imperio wants to write a pre-RFC, please get in touch with him if you're interested
+* Editing the Reference?
+* Possible change to meeting time?
+  * on reflection, peschkaj realizes that he should be realistic and won't be able to contribute much beyond typing :+1: or :( in IRC for a while. Please ignore.
+* peschkaj has a conflict during the current meeting time every week day, in addition to Tuesday and Thursday morning conflicts.
+* Best times are Monday and Wednesday and Friday between 9AM and 1PM Pacific (GMT -0700 as of 9/27)
+* Is there another time that's viable for other doc team members?
+* Peschkaj has two domains, learn.rs and learn-rust.com that he will not be using for anything.
+  * Would the Rust Foundation like to take control?
+  * If not, would anyone object to these domains pointing directly to the docs until they expire?
+
+#Agenda 2016-09-14
+  - frewsxcv: https://www.reddit.com/r/rust/comments/5295nf/why_im_dropping_rust/d7ib6zt
+  - matthew-piziak: https://github.com/rust-lang/rust/issues/36417
+    
+# Agenda 2016-09-07
+  - https://github.com/rust-lang/rust/pull/36045
+  - https://github.com/rust-lang/rust/pull/35667
+  - frewsxcv: https://www.reddit.com/r/rust/comments/50ol9l/setting_our_vision_for_the_2017_cycle/d75vbry
+
+# Agenda 2016-08-24
+
+* Status update for #1687
+* Status update for error codes updates
+* 
+
+# Agenda 2016-08-17
+
+* https://github.com/rust-lang/rust/pull/35667
+* https://github.com/rust-lang/rust/pull/35682
+* OMG - https://github.com/rust-lang/rust/issues/35233 <-- so many people came and helped!!
+* Also - Steve's blog post about book got a lot of people helping also.  Maybe we could harness this more?
+
+
+- action items
+  - leave a comment on RFC 1713 (steveklabnik)
+
+# Agenda 2016-08-10
+
+- localization next steps (brson)
+- https://github.com/rust-lang/rust/pull/35234
+
+Action items:
+      - merge #35234 (steveklabnik)
+      - collect URL requrements (steveklabnik)
+      - quest issue for website i18n (steveklabnik)
+      
+ Rustodc URL stakeholders from docs team:
+     -  steveklabnik
+     - ubsan
+     - imperio
+     - peschkaj
+     - Havvy
+     - jchae 
+      
+# Agenda 2016-08-03
+
+Nothing, @brson wasn't around, so bumped to next week
+
+# Agenda 2016-07-20
+
+* docs days 2 planning (it's been a while now since last one!)
+* jnrtr said he would send to imperio "what I'm currently planning on passing in"
+
+actions:
+    
+imperio: look around about making HTML/CSS more accessible (for blind people for example)
+
+# 2016-07-06
+ - https://github.com/rust-lang/rfcs/pull/1574/#discussion_r59055319
+    -> imperio: I think if there is only one title, it's useless to put "Basic examples", no strong conviction about it however
+    -> peschkaj: I think something simple is more desirable - in the docs jntrnr and I have put together, we recommend only basic examples in the API documentation and suggest that more complex examples be moved to the examples folder.
+    
+Conclusion: cut
+ 
+
+- https://github.com/rust-lang/rfcs/pull/1574/#discussion_r67826514
+   -> imperio: as a french, I don't care about this issue (totally over my head it is)
+   -> peschkaj: I think this can be easily avoided by picking a published writing guide that people can look up and follow. MLA, APA, Chicago style, whatever. It's much harder for people to argue when we've chosen an established, published, style guide.
+      -> peschkaj: after sleeping on it, I think we should leave style out of this document and fold style into a style specific set of guidelines
+
+conclusion: cut
+
+- https://github.com/rust-lang/rfcs/pull/1574#discussion_r67898732
+  -> imperio: I like "()" for functions' name, it allows to differentiate it from constant/static or non function things
+  -> peschkaj: I, too, prefer the use of "()" when I mention a function, even though I leave it off myself. It makes it easy to differentiate in text, as imperio points out.
+  -> peschkaj: on further research, I changed my vote
+  
+conclusion: cut
+
+# Agenda 2016-06-29
+
+ * is https://github.com/rust-lang/rfcs/pull/1574/ ready? brson seems to think this is the case so... let's discuss about it!
+ * feedbacks about rust doc days? I think this is quite important to see what was good and bad and try to improve it for the next time (if there is one? I hope so! ><).
+
+
+# Agenda 2016-06-22
+
+* A big HTML/CSS refactor is needed for the rustdoc generation (make it lighter and more accessible for blind people for example)
+* RFC 1574 looks ready for FCP -> now in FCP
+* book news
+
+# Agenda 2016-06-1
+
+* is RFC 1574 (steveklabnik's RFC about doc formatting) ready for FCP?
+* Suggest crates for Rust Doc Days
+
+    * Initially we limited ourselves to just rust-lang and rust-lang-nursery, but narrower suggestions make it easier to contribute. -> we can have more than one crate, one from rust-crates and one from out
+
+* reinforce error code example source code check (make sure the erronous code example returns the error code at least once) Two ways to do it:
+    * add expected error code as flag for code block alongside compie_fail (so for example: ```compile_fail,E0025)
+    * get the error code from the test (don't know yet how but might be possible) and then check if it is in the stderr
+* Rust crate front page RFC: https://github.com/jonathandturner/rust_proposals/blob/master/api_front_page_guidelines.md (one more pass before move to RFC?)
+
+# Agenda 2016-05-25
+
+* is RFC 1574 (steveklabnik's RFC about doc formatting) ready for FCP?
+* Discuss specific process for r+ rights
+
+    * Specific number of commits proposed as a requirement, no aggreement on number (imperio likes 50, steveklabnik has suggested lower numbers)
+
+    * Active IRC participation for ~3 months
+
+* Review doc days announcement
+* Set dates for doc days
+
+    * Agreed on June 24/25
+
+* is https://github.com/rust-lang/rfcs/pull/1567 ready?
+
+    * Agreed - it's ready -> waiting for core team opinion now
+
+
+## Action Items
+
+* peschkaj - add IRC channel, times, contributing information, links to RFCs, and a note to project owners to announcement
+
+# Agenda for 2016-05-18
+
+* discuss doc days plan
+* talk about r+ rights for docs
+* official-ness of the team
+
+## Action items
+
+(steveklabnik) -> finish revisions to RFC 1574
+(peschkaj) -> Create announcement for doc days
+
+## rust doc days notes
+
+* should we all work on only one crate or more than one ?
+  -> more than one it seems
+* to choose the crate(s), I propose to make a survey (and the proposed crates should be "famous" ones at first)
+  -> two surveys would be made, the first one for suggestions and the second one for voting for the selected ones
+* the event would not last a "day" properly speaking but a day from the moment you wake up to the moment you go to sleep (not forced to work the whole time of course!)
+  -> seems everyone agree on this
+  -> peschkaj disgrees - pick a 48 hour window, (e.g. 9AM UTC Friday - 9AM UTC Sunday). Allow people to work within that window of time to document libraries. I believe brson has tooling we can use to grab documentation, but this might not include PRs. We could also use a survey and a hash tag to collect information on PRs that people are using. If we go this route, I'll volunteer to aggregate everything.
+* the rust doc day should be on week-end
+  -> seems everyone agree on this
+  -> peschkaj would like to go on the record and disagree - I think we should pick a time that overlaps with the weekend, but includes a Friday. I would happily slack off and write documentation while on the clock and it would look like I was writing code :D
+* we should try to make an official definition of it (so what we'll decide will have to be accessible somewhere easily)
+  -> we didn't decided where we should put information for the moment
+
+# Agenda for 2016-05-18
+* rust doc day's surveys are maybe not the best idea (peschakj): " But, basically - "Let's go to lunch", everyone said. But nobody could agree where to go. Finally someone said "Pizza" out of desperation. Everyone agreed it was not the worst choice. Once they got to the pizza place, nobody could decide which toppings to get. Eventually everyone agreed "cheese" was not the worst choice. In the end, nobody was happy, but consensus was reached."
+
+    * peschkaj: My idea is that we, the doc committee, cherry pick crates that we know need love, or we cherry pick part of the rust stdlib.
+
+    * peschkaj: ultimately, I'd like to present people with a small selection of 5-10 choices, each choice should have a suggestion of where improvement is needed (e.g. in the introduction, APIs, larger examples, etc)
+
+
+## Action items
+
+(imperio/jntrnr) -> add unit test for error code when there isn't
+(steveklabnik) -> finish off details for the doc days, to be reviewed next week
+(imperio/jntrnr) -> looking into error message text styleguide
+
+# Agenda for 2016-05-11
+
+* making the team official: update
+* defining rust doc day ( what we will do, how and stuff)
+* doc-relnotes tag
+* jntrnr's "bonus item" aka error message styles
+
+# Agenda for 2016-05-04
+
+- Crate doc styleguide
+- "Doc day" for crate documentation
+- (peschkaj) talk about rustdoc.rs/doc.rs (some people seem interested to do it)
+
+## Action Items
+- (steveklabnik/imperio) Give feedback on the styleguide supplement draft (https://public.etherpad-mozilla.org/p/crate-docs-brainstorming )
+- (peschkaj/jntrnr): brainstorm "doc day"
+- (imperio) add merge of extend-css in rustdoc to the next twird and RSS add
+- imperio: work on https://github.com/rust-lang/cargo/pull/2256
+- peschkaj: write a little report about ecosystem documentation please (I'd like to add it into the next TWiRD)
+
+# To talk in future
+- Designing how to serialize rustdoc output (json/markdown/ascii/etc...)
+
+# Agenda next
+
+* (Manishearth) rustdoc.rs/docs/rs
+- (imperio) Progress on https://github.com/rust-lang/cargo/pull/2256
+- (steveklabnik) New rustbook status
+- (jntrnr/peschkaj) More progress on the crate doc styleguide (focus objectives, resources, examples)
+* (peschkaj/jntrnr(?)) Survey of current top 20 crates for more data for styleguide work
+* (steveklabnik/imperio) Advancement on https://github.com/rust-lang/rust/issues/32777 and https://github.com/rust-lang/rust/issues/29329
+* adding test to check if urls aren't broken in docs
+
+# Agenda for 2016-04-13
+
+- Improvements to rustdoc itself (e.g. more organized display of trait impls, etc) (durka) (not here, so getting removed)
+- New rustbook status
+- jntrnr talked about the new error handling in rustc, I'd like to know more about it :)
+- Adding a markdown output format in rustdoc?
+- Progress on crate doc styleguide
+- https://github.com/rust-lang/cargo/pull/2256
+- Recommendations for good tech writing style (use active voice, how to clearly present information, etc)
+
+## Action Items
+
+- peschkaj: 
+    Refine documentation objectives. 
+    Collect additional technical writing resources.
+    Review ecosystem documentation (top 20 crates by downloads)
+
+# Agenda for 2016-04-6
+
+- Re-evaluating my ecosystem survey and performing it on a regular basis to understand the health of the ecosystem https://users.rust-lang.org/t/lets-talk-about-ecosystem-documentation/2791
+- Creating a "This week in rust doc"?
+* Improvements to error messages (FYI on WIP)
+* Pointing errors at web pages with helpful descriptions/fixes
+
+## Action Items:
+      * imperio: set up "this week in rust" github org
+      * jntrnr & peschkaj: work on revised docs objectives for ecosystem crates
+      
+
+# Agenda for 2016-03-31
+
+- Updating RFC 505 to account for drift that has happened in the last year. https://github.com/rust-lang/rfcs/blob/master/text/0505-api-comment-conventions.md
+- Working through the Standard Library API Checklist, following the conventions from RFC 505 and its successor https://github.com/rust-lang/rust/issues/29329
+- Creating a convention for error codes
+- Status of new Rust book and what's next
+
+## Action Items
+    * steveklabnik - finish Rust API doc RFC https://github.com/steveklabnik/rfcs/blob/more-api-conventions/text/0000-more-api-documentation-conventions.md
+    * docs all - give comments on the Rust API doc
+    * steveklabnik - vet RFC through internals
+    * steveklabnik - update and sort the API docs list by those who need attention first
+    * docs all - once RFC is vetted, start working on Rust API docs that need it (for now, the not updated is https://github.com/rust-lang/rust/issues/29329 )
+    * docs all - give feedback on the new Rust book (https://github.com/rust-lang/book)
+    *  imperio - write an RFC to normalize the error codes' explanation format
+    *  imperio - close the old issue and open a new one with the remaining undocumented error code (I don't have rights do close it and I feel bad to open a new one without an official status so I'll schedule it until I have some answer here)
+
+1
